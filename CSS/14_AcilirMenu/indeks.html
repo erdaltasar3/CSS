@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        ul{list-style-type: none; width: 100%; background-color: #3f3f3f;}
+
+        ul li{padding: 15px ;width: 85px; margin-left: -30px; display: inline-block; margin-right: 15px;}
+
+        ul li:hover{background-color: red;}
+
+        ul li a{text-decoration: none; color: #fff;
+        font-family: Arial, Helvetica, sans-serif;}
+        
+        i{padding-right: 5px;transition: 0.5s;}
+
+        #news-content{display: block; position: absolute; z-index: 1; width: 90px;}
+    
+        div ul li{display: none; margin-top: 10px;}
+        div ul{margin-left: -15px;}
+
+        .news-li:hover div ul li{display: block;}
+    </style>
+
+
+</head>
+<body>
+    
+
+
+    <ul>
+        <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+
+        <li class="news-li"><a href="#"><i class="fa-solid fa-newspaper"></i>News</a>
+            <div id="news-content">
+                <ul>
+                    <li><a href="#">news1</a></li>
+                    <li><a href="#">news2</a></li>
+                    <li><a href="#">news3</a></li>
+                    <li><a href="#">news4</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"><i class="fa-regular fa-address-card"></i>Contact</a></li>
+        <li><a href="#"><i class="fa-solid fa-address-card"></i>About</a></li>
+    </ul>
+
+
+</body>
+</html>
