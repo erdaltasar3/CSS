@@ -1,3 +1,14 @@
-h2{
-    background-color: aquamarine;
+
+/* class secici */
+
+.yaziOzellik{
+    color: blue;
+    font-weight: 10;
+}
+
+/* id seçici */
+
+#yaziOzellik2{
+    color: orange;
+    font-size: 25;
 }
