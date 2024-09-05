@@ -5,16 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+    
     <style>
+        /*
+        link : ilk hali
+        hover : üzerine gelindiğinde
+        active : linkin üzerine tıklanıldığında
+        visited : site ziyaret edildikten sonra
+        */
+        a:link{
+            color: red;
+            text-decoration: none;
+        }
 
+        a:hover{
+            color: orange;
+        }
+        a:active{
+            color: blue;
+            background-color: antiquewhite;
+        }
+        a:visited{
+            color: brown;
+        }
         
     </style>
 </head>
 <body>
 
-    <i class="fa-solid fa-house"></i>
+    <a href="https://google.com.tr">Google</a>
 
 
 </body>
