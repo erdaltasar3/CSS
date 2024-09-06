@@ -35,19 +35,71 @@
             padding-left: 10px;
         }
         
-        ul li:first-child{
-            background-color: #82CB73;
-        }
         i{
             color: #fff;
         }
+
+        #i1{
+            background-color: #82CB73;
+        }
+
+        #news-dp{
+            position: absolute;
+            z-index: 1;
+            display: none;
+            margin-top: 10px;
+            margin-left: -6px;
+        }
+        .i2{
+            width: 100px;
+        }
+        ul li{
+            color: #fff;
+        }
+
+        #news-li:hover #news-dp{
+            display: block;
+        }
+
+        #news2-dp{
+            position: absolute;
+            z-index: 2;
+            margin-left: 170px;
+            margin-top: -30px;
+            display: none;
+        }
+
+        .i2:hover #news2-dp{
+            display: block;
+        }
+
+
     </style>
 </head>
 <body>
 
 <ul>
-    <li><i class="fa-solid fa-house"></i><a href="">Home</a></li>
-    <li><i class="fa-solid fa-newspaper"></i><a href="">News</a></li>
+    <li id="i1"><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+    <li id="news-li"><i class="fa-solid fa-newspaper"></i><a href="">News</a>
+        
+        <div id="news-dp">
+            <ul>
+                <li class="i2" style="display: block;">news 1</li>
+                <li class="i2" style="display: block;">news 2
+                    <div id="news2-dp">
+                        <ul>
+                            <li>details 1</li>
+                            <li>details 2</li>
+                            <li>details 3</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="i2" style="display: block;">news 3</li>
+                <li class="i2" style="display: block;">news 4</li>
+            </ul>
+        </div>
+
+    </li>
     <li><i class="fa-solid fa-address-card"></i><a href="">Contact</a></li>
     <li><i class="fa-solid fa-eject"></i><a href="">About</a></li>
 </ul>
